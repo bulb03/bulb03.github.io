@@ -25,6 +25,7 @@
 	var request = new XMLHttpRequest();
 	request.open('GET', requestURL,true);
 	request.withCredentials = true;
+    request.header(Access-Control-Allow-Origin:true)
 	request.responseType = 'json';
 	request.send();
 	request.onload = function() {
